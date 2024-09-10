@@ -39,16 +39,34 @@
     height: 100%;
 }
 
+/* Player styles */
 .player {
     position: absolute;
     width: 30px;
     height: 30px;
-    background-color: #007bff;
-    color: white;
     text-align: center;
     line-height: 30px;
     border-radius: 50%;
     font-size: 14px;
+    color: white;
+    background-color: #007bff; /* Default color, will be overridden by specific player types */
+}
+
+/* Specific player types */
+.player.GK { /* Goalkeeper */
+    background-color: grey;
+}
+
+.player.DEF { /* Defender */
+    background-color: blue;
+}
+
+.player.MID { /* Midfielder */
+    background-color: yellow;
+}
+
+.player.FWD { /* Forward */
+    background-color: red;
 }
 
 /* Example player positions */
