@@ -15,6 +15,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="navbar-item">
+            <Link to="/bracket" className="navbar-link">
+              Bracket
+            </Link>
+          </li>
+          <li className="navbar-item">
             <Link to="/matches" className="navbar-link">
               Matches
             </Link>
