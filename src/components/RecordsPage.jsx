@@ -1,6 +1,6 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import './RecordsPage.css'
+import { useLocation, Link } from "react-router-dom";
+import "../styles/RecordsPage.css";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -23,6 +23,7 @@ export default function RecordsPage({ records, players }) {
 
   return (
     <div className="records-page">
+      <Link to="/" className="back-to-home-from-records">Back to Home</Link>
       <h2>Records for Match {matchId}</h2>
       {filteredRecords.length === 0 ? (
         <p>No records found for this match.</p>

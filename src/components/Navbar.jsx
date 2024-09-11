@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <img src="/logos/EURO2024.png" alt="logo" className="logo" />
+      </div>
+      <div className="navbar-title">
+        European Football Championship 2024
       </div>
       <div className="navbar-menu-container">
         <ul className="navbar-menu">
@@ -19,7 +22,7 @@ export default function Navbar() {
               Bracket
             </Link>
           </li>
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
             <Link to="/matches" className="navbar-link">
               Matches
             </Link>
@@ -33,7 +36,7 @@ export default function Navbar() {
             <Link to="/records" className="navbar-link">
               Records
             </Link>
-          </li>
+          </li> */}
           <li className="navbar-item">
             <Link to="/search" className="navbar-link">
               Search

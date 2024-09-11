@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './BracketView.css';
+import "../styles/BracketView.css";
 import parseDate from "../utils/dataParser";
 
 export default function BracketView({ matches, teams }) {
@@ -53,8 +53,14 @@ export default function BracketView({ matches, teams }) {
                 <div className="match-result">{match.Score}</div>
                 <div className="team-info">{getTeamNameById(match.BTeamID)}</div>
               </div>
-              {index < sortedMatches.length - 1 && (
-                <div className="line-to-next-round"></div>
+              {(className === 'eight-finals' && index === 0) && (
+                <div className="line-to-next-round line-three"></div>
+              )}
+              {(className === 'eight-finals' && index === 1) && (
+                <div className="line-to-next-round line-two"></div>
+              )}
+              {(className === 'eight-finals' && (index === 2 || index === 3)) && (
+                <div className="line-to-next-round line-one"></div>
               )}
             </div>
           ))}

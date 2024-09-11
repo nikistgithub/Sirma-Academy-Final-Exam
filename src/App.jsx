@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { useEffect } from "react";
 import parseCSV from "./utils/csvParser";
 import HomePage from "./components/HomePage";

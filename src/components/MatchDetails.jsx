@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import "./MatchDetails.css";
+import "../styles/MatchDetails.css";
 
 export default function MatchDetails({ matches, teams }) {
   const { matchId } = useParams();
@@ -70,6 +70,7 @@ export default function MatchDetails({ matches, teams }) {
 
   return (
     <div className="match-details">
+      <Link to="/" className="back-to-home-from-match">Back to Home</Link>
       {/* Match result */}
       <div className="match-result">
         <h2>

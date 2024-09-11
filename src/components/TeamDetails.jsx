@@ -1,6 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import './TeamDetails.css';
+import { useParams, Link } from "react-router-dom";
+import "../styles/TeamDetails.css";
 
 export default function TeamDetails({ teams, players }) {
   const { teamId } = useParams();
@@ -20,6 +20,7 @@ export default function TeamDetails({ teams, players }) {
 
   return (
     <div className="team-details">
+      <Link to="/" className="back-to-home">Back to Home</Link>
       <h2>{team.Name} Roster</h2>
       <table>
         <thead>

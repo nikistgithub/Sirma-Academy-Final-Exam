@@ -7,6 +7,19 @@
     align-items: center;
     background-color: #f9f9f9; 
 }
+
+.back-to-home-from-records {
+    position: absolute; /* Positioning it absolutely */
+    top: 150px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-to-home-from-records:hover {
+    text-decoration: underline;
+}
   
 .records-page h2 {
     text-align: center;

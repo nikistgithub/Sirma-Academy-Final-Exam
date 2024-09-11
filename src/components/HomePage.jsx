@@ -1,5 +1,5 @@
 import parseDate from "../utils/dataParser";
-import "./HomePage.css";
+import "../styles/HomePage.css";
 import { useNavigate } from "react-router-dom";
 
 export default function HomePage({ teams, matches }) {
