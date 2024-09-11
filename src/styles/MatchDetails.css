@@ -6,11 +6,11 @@
 }
 
 .back-to-home-from-match {
-  position: absolute; /* Positioning it absolutely */
-  top: 150px; /* Distance from the top */
-  left: 20px; /* Distance from the left */
-  font-size: 18px;
-  color: #007bff;
+  position: absolute; 
+  top: 150px; 
+  left: 20px;
+  font-size: 20px;
+  color: black;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@
 
 .match-result a {
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
 }
 
 .match-result a:hover {
@@ -39,7 +39,7 @@
 }
 
 .records-link {
-  margin: 20px 0; /* Adding some spacing */
+  margin: 20px 0; 
 }
 
 .records-link a {
@@ -50,11 +50,10 @@
   text-decoration: underline;
 }
 
-.records-link a, /* Targeting links inside the .records-link class */
+.records-link a,
 .match-result a {
-  /* Targeting links inside the .match-result class */
   text-decoration: none;
-  color: inherit; /* Keeps the default color */
+  color: inherit;
 }
 
 .formations-container {
@@ -70,7 +69,7 @@
   border: 2px solid #ddd;
   border-radius: 10px;
   background-color: #f0f0f0;
-  background-image: url("/logos/FootballField.png"); /* Ensure this path is correct */
+  background-image: url("/logos/FootballField.png"); 
   background-size: cover;
   background-position: center;
 }
@@ -81,7 +80,6 @@
   height: 100%;
 }
 
-/* Player styles */
 .player {
   position: absolute;
   width: 30px;
@@ -91,66 +89,147 @@
   border-radius: 50%;
   font-size: 14px;
   color: white;
-  background-color: #007bff; /* Default color, will be overridden by specific player types */
+  background-color: #007bff; 
 }
 
-/* Specific player types */
 .player.GK {
-  /* Goalkeeper */
   background-color: grey;
 }
 
 .player.DEF {
-  /* Defender */
   background-color: blue;
 }
 
 .player.MID {
-  /* Midfielder */
   background-color: yellow;
 }
 
 .player.FWD {
-  /* Forward */
   background-color: red;
 }
 
-/* Example player positions */
 .player.GK {
-  /* Goalkeeper */
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .player.CB {
-  /* Centre-back */
   top: 30%;
   left: 25%;
 }
 
 .player.RB {
-  /* Right-back */
   top: 30%;
   left: 75%;
 }
 
 .player.LB {
-  /* Left-back */
   top: 30%;
   left: 10%;
 }
 
 .player.CM {
-  /* Central Midfielder */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .player.ST {
-  /* Striker */
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .match-details {
+    padding: 10px;
+  }
+
+  .back-to-home-from-match {
+    top: 100px;
+    left: 10px;
+    font-size: 16px;
+  }
+
+  .match-result {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+
+  .records-link {
+    margin: 10px 0;
+  }
+
+  .records-link a {
+    font-size: 14px;
+  }
+
+  .formations-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-formation {
+    width: 90%;
+    height: 800px;
+    margin-bottom: 20px;
+  }
+
+  .player {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .match-details {
+    padding: 5px;
+  }
+
+  .back-to-home-from-match {
+    top: 70px; 
+    left: 15px; 
+    font-size: 12px;
+  }
+
+  .match-result {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .score {
+    font-size: 16px;
+  }
+
+  .records-link {
+    margin: 5px 15px; 
+    text-align: center; 
+  }
+
+  .records-link a {
+    font-size: 10px;
+  }
+
+  .formations-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-formation {
+    width: 80%;
+    height: 600px;
+    margin-bottom: 10px;
+  }
+
+  .player {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+  }
 }

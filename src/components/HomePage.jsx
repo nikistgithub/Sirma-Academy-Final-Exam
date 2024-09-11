@@ -1,6 +1,7 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import parseDate from "../utils/dataParser";
 import "../styles/HomePage.css";
-import { useNavigate } from "react-router-dom";
 
 export default function HomePage({ teams, matches }) {
   const navigate = useNavigate();
@@ -48,7 +49,11 @@ export default function HomePage({ teams, matches }) {
         const matchDate = formatDate(match.Date);
 
         return (
-          <div key={match.ID} className="match-card" onClick={() => handleMatchClick(match.ID)}>
+          <div
+            key={match.ID}
+            className="match-card"
+            onClick={() => handleMatchClick(match.ID)}
+          >
             <div className="match-date">{matchDate}</div>
 
             <div className="teams-container">

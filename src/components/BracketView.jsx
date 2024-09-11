@@ -19,7 +19,6 @@ export default function BracketView({ matches, teams }) {
     final: new Date("2024-07-11"),
   };
 
-  // Organize matches into stages
   matches.forEach((match) => {
     const matchDate = parseDate(match.Date);
     if (matchDate <= cutoffDates.groupStage) {
@@ -49,19 +48,14 @@ export default function BracketView({ matches, teams }) {
           {sortedMatches.map((match, index) => (
             <div key={match.ID} className="match-cards">
               <div className="teams-container">
-                <div className="team-info">{getTeamNameById(match.ATeamID)}</div>
+                <div className="team-info">
+                  {getTeamNameById(match.ATeamID)}
+                </div>
                 <div className="match-result">{match.Score}</div>
-                <div className="team-info">{getTeamNameById(match.BTeamID)}</div>
+                <div className="team-info">
+                  {getTeamNameById(match.BTeamID)}
+                </div>
               </div>
-              {(className === 'eight-finals' && index === 0) && (
-                <div className="line-to-next-round line-three"></div>
-              )}
-              {(className === 'eight-finals' && index === 1) && (
-                <div className="line-to-next-round line-two"></div>
-              )}
-              {(className === 'eight-finals' && (index === 2 || index === 3)) && (
-                <div className="line-to-next-round line-one"></div>
-              )}
             </div>
           ))}
         </div>
@@ -74,18 +68,22 @@ export default function BracketView({ matches, teams }) {
       <div className="bracket-view">
         <Link to="/">Back to Home</Link>
         <div className="knockout-bracket">
-          {renderKnockoutStage(stages.eightFinals, 'Eight Finals', 'eight-finals')}
-          {renderKnockoutStage(stages.quarterFinals, 'Quarter Finals', 'quarter-finals')}
-          {renderKnockoutStage(stages.semiFinals, 'Semi Finals', 'semi-finals')}
-          {renderKnockoutStage(stages.final, 'Final', 'final')}
+          {renderKnockoutStage(
+            stages.eightFinals,
+            "Eight Finals",
+            "eight-finals"
+          )}
+          {renderKnockoutStage(
+            stages.quarterFinals,
+            "Quarter Finals",
+            "quarter-finals"
+          )}
+          {renderKnockoutStage(stages.semiFinals, "Semi Finals", "semi-finals")}
+          {renderKnockoutStage(stages.final, "Final", "final")}
         </div>
       </div>
     );
   };
 
-  return (
-    <div className="bracket-container">
-      {renderBracket()}
-    </div>
-  );
+  return <div className="bracket-container">{renderBracket()}</div>;
 }

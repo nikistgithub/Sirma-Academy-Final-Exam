@@ -10,17 +10,17 @@ export default function TeamDetails({ teams, players }) {
     return <div>Team not found</div>;
   }
 
-  // Debugging: Check the data of players
   console.log("Players Data:", players);
 
   const teamPlayers = players.filter((player) => player.TeamID === teamId);
 
-  // Debugging: Check the filtered team players
   console.log("Team Players:", teamPlayers);
 
   return (
     <div className="team-details">
-      <Link to="/" className="back-to-home">Back to Home</Link>
+      <Link to="/" className="back-to-home">
+        Back to Home
+      </Link>
       <h2>{team.Name} Roster</h2>
       <table>
         <thead>

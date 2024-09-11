@@ -33,8 +33,8 @@ body {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  color: white; /* Ensure the title is visible against the background */
-  margin-left: 200px;
+  color: white; 
+  margin-left: 60px;
 }
 
 .navbar-menu-container {
@@ -67,4 +67,61 @@ body {
 .navbar-link:hover {
   background-color: #555;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 80px;
+    padding: 0 16px;
+  }
+
+  .navbar-logo img {
+    width: 60px;
+    height: 70px;
+    margin: 0 20px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+    margin-left: 50px;
+    text-align: left; 
+  }
+
+  .navbar-menu {
+    gap: 16px;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    height: 60px;
+    padding: 0 8px;
+  }
+
+  .navbar-logo img {
+    width: 40px;
+    height: 50px;
+    margin: 0 10px;
+  }
+
+  .navbar-title {
+    font-size: 14px;
+    margin-left: 20px;
+    text-align: left; 
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }
