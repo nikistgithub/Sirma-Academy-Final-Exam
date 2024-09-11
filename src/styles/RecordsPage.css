@@ -70,7 +70,7 @@
   color: #888;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .records-page {
     padding: 10px; 
   }

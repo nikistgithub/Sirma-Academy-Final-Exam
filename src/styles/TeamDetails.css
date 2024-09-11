@@ -41,7 +41,7 @@
   background-color: #f1f1f1;
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .team-details {
     padding: 10px;
   }

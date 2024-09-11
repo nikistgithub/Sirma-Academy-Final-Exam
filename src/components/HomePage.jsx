@@ -12,13 +12,18 @@ export default function HomePage({ teams, matches }) {
   };
 
   const getWinningTeam = (match) => {
-    const [homeScore, awayScore] = match.Score.split("-").map((part) =>
-      parseInt(part.replace(/\(\d+\)/, ""))
-    );
-    if (homeScore > awayScore)
+    const scoreParts = match.Score.split("-");
+    if (scoreParts.length !== 2) return { winner: "draw", team: "" };
+
+    const homeScore = parseInt(scoreParts[0].trim(), 10);
+    const awayScore = parseInt(scoreParts[1].trim(), 10);
+
+    if (homeScore > awayScore) {
       return { winner: "home", team: getTeamNameById(match.ATeamID) };
-    if (homeScore < awayScore)
+    }
+    if (homeScore < awayScore) {
       return { winner: "away", team: getTeamNameById(match.BTeamID) };
+    }
     return { winner: "draw", team: "" };
   };
 
@@ -33,7 +38,7 @@ export default function HomePage({ teams, matches }) {
   };
 
   const getTeamLogo = (teamName) => {
-    const normalizedTeamName = teamName.replace(/\s+/g, "");
+    const normalizedTeamName = teamName.split(" ").join("");
     return `/logos/${normalizedTeamName}.png`;
   };
 

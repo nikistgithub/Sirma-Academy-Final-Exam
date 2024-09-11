@@ -154,7 +154,6 @@ export default function MatchDetails({ matches, teams }) {
 
         <div className="team-formation">
           <div className="formation">
-            {/* Display Team B's players */}
             <div
               className="player GK"
               style={{ top: "10%", left: "50%", transform: "translateX(-50%)" }}
