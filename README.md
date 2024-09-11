@@ -97,21 +97,21 @@ This command will start the development server and open the application in your 
 
 - For Home Page
 
-![HomePage](/public/screenshots/HomePage.png)
+![HomePage](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/HomePage.png)
 
 - For Match Details
 
-![MatchDetails](/public/screenshots/MatchDetails.png)
-![SecondMatchDetails](/public/screenshots/SecondMatchDetails.png)
+![MatchDetails](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/MatchDetails.png)
+![SecondMatchDetails](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/SecondMatchDetails.png)
 
 - For Bracket View
 
-![BracketView](/public/screenshots/BracketView.png)
+![BracketView](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/BracketView.png)
 
 - For Team Details
 
-![TeamDetails](/public/screenshots/TeamDetails.png)
+![TeamDetails](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/TeamDetails.png)
 
 - For Records
 
-![Records](/public/screenshots/Records.png)
+![Records](https://github.com/nikistgithub/Sirma-Academy-Final-Exam.git/public/screenshots/Records.png)
