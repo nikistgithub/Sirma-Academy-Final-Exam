@@ -15,9 +15,7 @@ export default function RecordsPage({ records, players }) {
   );
 
   const getPlayerNameById = (id) => {
-    console.log("Looking up player with ID:", id);
     const player = players.find((player) => player.ID === id);
-    console.log("Found player:", player);
     return player ? player.FullName : "Unknown Player";
   };
 

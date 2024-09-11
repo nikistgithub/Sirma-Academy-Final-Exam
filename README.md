@@ -97,21 +97,21 @@ This command will start the development server and open the application in your 
 
 - For Home Page
 
-![HomePage]('/public/screenshots/HomePage.png')
+![HomePage](/public/screenshots/HomePage.png)
 
 - For Match Details
 
-![MatchDetails]('/public/screenshots/MatchDetails.png')
-![SecondMatchDetails]('/public/screenshots/SecondMatchDetails.png')
+![MatchDetails](/public/screenshots/MatchDetails.png)
+![SecondMatchDetails](/public/screenshots/SecondMatchDetails.png)
 
 - For Bracket View
 
-![BracketView]('/public/screenshots/BracketView.png')
+![BracketView](/public/screenshots/BracketView.png)
 
 - For Team Details
 
-![TeamDetails]('/public/screenshots/TeamDetails.png')
+![TeamDetails](/public/screenshots/TeamDetails.png)
 
 - For Records
 
-![Records]('/public/screenshots/Records.png')
+![Records](/public/screenshots/Records.png)

@@ -22,12 +22,6 @@ function App() {
     const parsedPlayers = parseCSV(playersCSV);
     const parsedRecords = parseCSV(recordsCSV);
 
-    console.log("Parsed Teams:", parsedTeams); // Debugging
-    console.log("Parsed Matches:", parsedMatches); // Debugging
-    console.log("Parsed Players:", parsedPlayers); // Debugging
-    console.log("Parsed Records:", parsedRecords); // Debugging
-
-
     setTeams(parsedTeams);
     setMatches(parsedMatches);
     setPlayers(parsedPlayers);

@@ -10,11 +10,7 @@ export default function TeamDetails({ teams, players }) {
     return <div>Team not found</div>;
   }
 
-  console.log("Players Data:", players);
-
   const teamPlayers = players.filter((player) => player.TeamID === teamId);
-
-  console.log("Team Players:", teamPlayers);
 
   return (
     <div className="team-details">
