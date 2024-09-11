@@ -30,6 +30,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="navbar-item">
+            <Link to="/records" className="navbar-link">
+              Records
+            </Link>
+          </li>
+          <li className="navbar-item">
             <Link to="/search" className="navbar-link">
               Search
             </Link>

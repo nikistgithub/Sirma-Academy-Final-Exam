@@ -40,10 +40,10 @@ export default function BracketView({ matches, teams }) {
     return team ? team.Name : "Unknown team";
   };
 
-  const renderKnockoutStage = (matches, title) => {
+  const renderKnockoutStage = (matches, title, className) => {
     const sortedMatches = matches.sort((a, b) => a.ID - b.ID);
     return (
-      <div className="knockout-stage">
+      <div className={`knockout-stage ${className}`}>
         <h2>{title}</h2>
         <div className="bracket-round">
           {sortedMatches.map((match, index) => (
@@ -68,10 +68,10 @@ export default function BracketView({ matches, teams }) {
       <div className="bracket-view">
         <Link to="/">Back to Home</Link>
         <div className="knockout-bracket">
-          {renderKnockoutStage(stages.eightFinals, 'Eight Finals')}
-          {renderKnockoutStage(stages.quarterFinals, 'Quarter Finals')}
-          {renderKnockoutStage(stages.semiFinals, 'Semi Finals')}
-          {renderKnockoutStage(stages.final, 'Final')}
+          {renderKnockoutStage(stages.eightFinals, 'Eight Finals', 'eight-finals')}
+          {renderKnockoutStage(stages.quarterFinals, 'Quarter Finals', 'quarter-finals')}
+          {renderKnockoutStage(stages.semiFinals, 'Semi Finals', 'semi-finals')}
+          {renderKnockoutStage(stages.final, 'Final', 'final')}
         </div>
       </div>
     );

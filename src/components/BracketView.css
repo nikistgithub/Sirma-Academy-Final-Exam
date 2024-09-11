@@ -3,34 +3,65 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-  }
+}
   
-  .bracket-view {
+.bracket-view {
     width: 100%;
-  }
+}
   
-  .knockout-bracket {
+.knockout-bracket {
     display: flex;
     justify-content: center;
     width: 100%;
     position: relative;
-  }
+}
+
+.knockout-bracket h2 {
+    margin: 0 30px;
+}
   
-  .knockout-stage {
+.knockout-stage {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
-  }
+}
   
-  .bracket-round {
+
+.quarter-finals, .semi-finals, .final {
+    transform: translateX(30px); 
+}
+  
+.bracket-round {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-  }
+}
   
-  .match-cards {
+.eight-finals .match-cards,
+.quarter-finals .match-cards,
+.semi-finals .match-cards,
+.final .match-cards {
+    transform: translateX(20px); 
+}
+
+.semi-finals .match-cards {
+    transform: translateX(50px);
+}
+
+.final .match-cards {
+    transform: translateX(80px); 
+}
+  
+.eight-finals .line-to-next-round,
+.quarter-finals .line-to-next-round,
+.semi-finals .line-to-next-round,
+.final .line-to-next-round {
+    right: -25%; 
+}
+  
+.match-cards {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,23 +74,23 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 250px;
     text-align: center;
-  }
-  
-  .line-to-next-round {
+}
+
+.line-to-next-round {
     position: absolute;
     right: -25%;
     top: 50%;
     width: 50px;
     height: 2px;
     background-color: #000;
-  }
+}
   
-  .team-info {
-    font-size: 15px;
+.team-info {
+    font-size: 18px;
     margin: 5px 0;
-  }
+}
   
-  .match-result {
-    font-size: 15px;
+.match-result {
+    font-size: 18px;
     margin-top: 20px;
-  }
+}

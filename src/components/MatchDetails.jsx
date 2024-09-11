@@ -84,6 +84,11 @@ export default function MatchDetails({ matches, teams }) {
         <div className="score">{match.Score}</div>
       </div>
 
+      {/* Link to records page */}
+      <div className="records-link">
+        <Link to={`/records?matchId=${matchId}`}>View Records for this Match</Link>
+      </div>
+
       {/* Team formations */}
       <div className="formations-container">
         <div className="team-formation">
